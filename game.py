@@ -102,6 +102,17 @@ class QuizGame:
                 print(f"[오답] 정답은 {quiz.answer}번입니다.")
         score = correct_count * 100 // len(self.quizzes)
         print(f"결과: {len(self.quizzes)}문제 중 {correct_count}문제 정답! ({score}점)")
+        if self.best_score is None or score > self.best_score:
+            self.best_score = score
+            print("새로운 최고 점수입니다!")
+        if not self.save_state():
+            print("이번 점수는 메모리에 있지만 파일에 저장되지 않았습니다.")
+
+    def show_score(self):
+        if self.best_score is None:
+            print("아직 퀴즈를 끝까지 푼 기록이 없습니다.")
+        else:
+            print(f"최고 점수: {self.best_score}점 (100점 만점)")
 
     def add_quiz(self):
         print("\n새 퀴즈를 추가합니다.")
@@ -133,10 +144,10 @@ class QuizGame:
                     self.add_quiz()
                 elif choice == 3:
                     self.list_quizzes()
+                elif choice == 4:
+                    self.show_score()
                 elif choice == 5:
                     break
-                else:
-                    print("이 기능은 다음 개발 단계에서 연결합니다.")
         except (EOFError, KeyboardInterrupt):
             print("\n입력이 중단되어 안전하게 종료합니다.")
         finally:
