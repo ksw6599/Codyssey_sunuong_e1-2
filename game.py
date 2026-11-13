@@ -77,14 +77,34 @@ class QuizGame:
         print("4. 점수 확인")
         print("5. 종료")
 
+    def play_quiz(self):
+        if not self.quizzes:
+            print("등록된 퀴즈가 없습니다. 먼저 퀴즈를 추가해 주세요.")
+            return
+        correct_count = 0
+        print(f"\n퀴즈를 시작합니다. (총 {len(self.quizzes)}문제)")
+        for number, quiz in enumerate(self.quizzes, start=1):
+            quiz.display(number)
+            answer = read_number("정답 입력 (1~4): ", 1, 4)
+            if quiz.is_correct(answer):
+                correct_count += 1
+                print("[정답] 맞았습니다!")
+            else:
+                print(f"[오답] 정답은 {quiz.answer}번입니다.")
+        score = correct_count * 100 // len(self.quizzes)
+        print(f"결과: {len(self.quizzes)}문제 중 {correct_count}문제 정답! ({score}점)")
+
     def run(self):
         try:
             while True:
                 self.show_menu()
                 choice = read_number("선택 (1~5): ", 1, 5)
-                if choice == 5:
+                if choice == 1:
+                    self.play_quiz()
+                elif choice == 5:
                     break
-                print("이 기능은 다음 개발 단계에서 연결합니다.")
+                else:
+                    print("이 기능은 다음 개발 단계에서 연결합니다.")
         except (EOFError, KeyboardInterrupt):
             print("\n입력이 중단되어 안전하게 종료합니다.")
         finally:
