@@ -1,0 +1,24 @@
+Cloning into 'C:\Users\04ksw\Documents\Codex\codyssey-e1-2-clone-practice'...
+Clone command used: git clone https://github.com/ksw6599/Codyssey_sunuong_e1-2.git codyssey-e1-2-clone-practice
+> git add README.md
+warning: in the working copy of 'README.md', CRLF will be replaced by LF the next time Git touches it
+> git commit -m Docs: confirm edit from separate clone for pull exercise
+[main 9e151b1] Docs: confirm edit from separate clone for pull exercise
+ 1 file changed, 2 insertions(+)
+> git push origin main
+To https://github.com/ksw6599/Codyssey_sunuong_e1-2.git
+   fa463cc..9e151b1  main -> main
+> git pull --ff-only origin main (original project)
+From https://github.com/ksw6599/Codyssey_sunuong_e1-2
+ * branch            main       -> FETCH_HEAD
+   fa463cc..9e151b1  main       -> origin/main
+Updating fa463cc..9e151b1
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+> Check pulled README marker
+복제 실습: 별도 clone 작업 디렉터리에서 이 줄을 추가하고 commit → push했습니다.
+> Original project HEAD
+9e151b14306395df5db14c1c8cdc527ed96a489a
+> Clone-practice HEAD
+9e151b14306395df5db14c1c8cdc527ed96a489a

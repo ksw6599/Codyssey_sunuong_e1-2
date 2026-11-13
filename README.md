@@ -147,7 +147,20 @@ git log --oneline --graph --all
 
 ## clone / pull 실습
 
-별도 디렉터리에 clone → 복제본 README 수정·commit·push → 기존 작업 폴더에서 `pull --ff-only` → 변경 반영 확인을 수행하고 결과를 아래에 기록합니다.
+별도 디렉터리 `codyssey-e1-2-clone-practice`에 clone하고 복제본에서 README에 마지막 문장을 추가했습니다. 그 변경을 커밋·push한 뒤 기존 폴더에서 아래 명령으로 실제 가져왔습니다.
+
+```powershell
+git pull --ff-only origin main
+```
+
+```text
+Updating fa463cc..9e151b1
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+```
+
+두 폴더의 HEAD가 모두 `9e151b14306395df5db14c1c8cdc527ed96a489a`이고 README의 추가 문장이 같음을 확인했습니다. [clone → commit → push → pull 실제 로그](docs/evidence/clone-pull.log)
 
 ## 트러블슈팅
 
@@ -164,10 +177,10 @@ git log --oneline --graph --all
 - [x] EOF·Ctrl+C·빈 목록·데이터 복구·입출력 실패 처리
 - [x] 재시작 후 추가 문제와 최고 점수 유지
 - [x] 의미 있는 커밋 10개 이상, 기능 브랜치와 실제 merge
-- [ ] 별도 clone에서 수정·push 후 기존 폴더 pull 결과 확인
+- [x] 별도 clone에서 수정·push 후 기존 폴더 pull 결과 확인
 - [x] 개요·주제·실행·기능·구조·데이터 파일 문서
 - [x] 실제 환경 및 프로그램 실행 결과 캡처
-- [ ] 최종 Git 그래프 캡처와 증거 링크 점검
+- [x] 최종 Git 그래프 캡처와 증거 링크 점검
 
 선택 기능(랜덤·문제 수 선택·힌트·삭제·히스토리)은 이번 구현 범위에 넣지 않았습니다.
 

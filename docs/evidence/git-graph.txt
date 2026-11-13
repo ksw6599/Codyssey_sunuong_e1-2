@@ -1,0 +1,19 @@
+* 9e151b1 Docs: confirm edit from separate clone for pull exercise
+* fa463cc Docs: explain execution, state recovery and actual result captures
+* 9089b12 Docs: record mission checklist and reproducible console evidence
+* 174e669 Test: verify real CLI sessions, persistence and SIGINT end to end
+* 75f6d6f Test: cover input, score persistence, corrupt files and interrupted sessions
+* 1f6d298 Fix: preserve corrupt state and replace saves atomically
+* a88575e Refactor: separate reusable console validation from QuizGame
+* b5cc963 Feat: compare, display and persist the highest percentage score
+* ecca950 Feat: list saved quiz questions and handle an empty library
+* 13a4572 Feat: register validated quizzes and persist them immediately
+*   12c35a2 Merge: integrate tested quiz-play feature into main
+|\  
+| * 1fa99c3 Feat: implement complete quiz rounds on feature branch
+|/  
+* 352dd79 Feat: load and save quiz data in project-root UTF-8 state.json
+* cd4d3a7 Feat: add six workstation review quizzes from E1-1
+* a7ebed0 Feat: model four-choice questions with validated Quiz objects
+* 73618bc Feat: add numbered menu and safe console input handling
+* 2935a42 Chore: initialize E1-2 Python quiz project

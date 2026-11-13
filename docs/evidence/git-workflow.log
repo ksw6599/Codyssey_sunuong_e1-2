@@ -1,0 +1,202 @@
+> git remote add origin https://github.com/ksw6599/Codyssey_sunuong_e1-2.git
+Exit code: 0
+
+> git push -u origin main
+To https://github.com/ksw6599/Codyssey_sunuong_e1-2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+Exit code: 0
+
+> git log -1 --oneline
+2935a42 Chore: initialize E1-2 Python quiz project
+Exit code: 0
+
+> git add main.py game.py
+Exit code: 0
+
+> git commit -m Feat: add numbered menu and safe console input handling
+[main 73618bc] Feat: add numbered menu and safe console input handling
+ 2 files changed, 51 insertions(+)
+ create mode 100644 game.py
+ create mode 100644 main.py
+Exit code: 0
+
+> git add quiz.py
+Exit code: 0
+
+> git commit -m Feat: model four-choice questions with validated Quiz objects
+[main a7ebed0] Feat: model four-choice questions with validated Quiz objects
+ 1 file changed, 39 insertions(+)
+ create mode 100644 quiz.py
+Exit code: 0
+
+> git add defaults.py game.py
+Exit code: 0
+
+> git commit -m Feat: add six workstation review quizzes from E1-1
+[main cd4d3a7] Feat: add six workstation review quizzes from E1-1
+ 2 files changed, 27 insertions(+)
+ create mode 100644 defaults.py
+Exit code: 0
+
+> git add game.py
+Exit code: 0
+
+> git commit -m Feat: load and save quiz data in project-root UTF-8 state.json
+[main 352dd79] Feat: load and save quiz data in project-root UTF-8 state.json
+ 1 file changed, 45 insertions(+), 1 deletion(-)
+Exit code: 0
+
+> git checkout -b feature/quiz-play
+Switched to a new branch 'feature/quiz-play'
+Exit code: 0
+
+> git add game.py
+Exit code: 0
+
+> git commit -m Feat: implement complete quiz rounds on feature branch
+[feature/quiz-play 1fa99c3] Feat: implement complete quiz rounds on feature branch
+ 1 file changed, 22 insertions(+), 2 deletions(-)
+Exit code: 0
+
+> git push -u origin feature/quiz-play
+remote: 
+remote: Create a pull request for 'feature/quiz-play' on GitHub by visiting:        
+remote:      https://github.com/ksw6599/Codyssey_sunuong_e1-2/pull/new/feature/quiz-play        
+remote: 
+To https://github.com/ksw6599/Codyssey_sunuong_e1-2.git
+ * [new branch]      feature/quiz-play -> feature/quiz-play
+branch 'feature/quiz-play' set up to track 'origin/feature/quiz-play'.
+Exit code: 0
+
+> git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+Exit code: 0
+
+> git merge --no-ff feature/quiz-play -m Merge: integrate tested quiz-play feature into main
+Merge made by the 'ort' strategy.
+ game.py | 24 ++++++++++++++++++++++--
+ 1 file changed, 22 insertions(+), 2 deletions(-)
+Exit code: 0
+
+> git add game.py
+Exit code: 0
+
+> git commit -m Feat: register validated quizzes and persist them immediately
+[main 13a4572] Feat: register validated quizzes and persist them immediately
+ 1 file changed, 22 insertions(+)
+Exit code: 0
+
+> git add game.py
+Exit code: 0
+
+> git commit -m Feat: list saved quiz questions and handle an empty library
+[main ecca950] Feat: list saved quiz questions and handle an empty library
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+Exit code: 0
+
+> git add game.py
+Exit code: 0
+
+> git commit -m Feat: compare, display and persist the highest percentage score
+[main b5cc963] Feat: compare, display and persist the highest percentage score
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+Exit code: 0
+
+> git add game.py inputs.py
+Exit code: 0
+
+> git commit -m Refactor: separate reusable console validation from QuizGame
+[main a88575e] Refactor: separate reusable console validation from QuizGame
+ 2 files changed, 28 insertions(+), 26 deletions(-)
+ create mode 100644 inputs.py
+Exit code: 0
+
+> git add game.py
+Exit code: 0
+
+> git commit -m Fix: preserve corrupt state and replace saves atomically
+[main 1f6d298] Fix: preserve corrupt state and replace saves atomically
+ 1 file changed, 43 insertions(+), 7 deletions(-)
+Exit code: 0
+
+> git log --oneline --graph --all
+* 1f6d298 Fix: preserve corrupt state and replace saves atomically
+* a88575e Refactor: separate reusable console validation from QuizGame
+* b5cc963 Feat: compare, display and persist the highest percentage score
+* ecca950 Feat: list saved quiz questions and handle an empty library
+* 13a4572 Feat: register validated quizzes and persist them immediately
+*   12c35a2 Merge: integrate tested quiz-play feature into main
+|\  
+| * 1fa99c3 Feat: implement complete quiz rounds on feature branch
+|/  
+* 352dd79 Feat: load and save quiz data in project-root UTF-8 state.json
+* cd4d3a7 Feat: add six workstation review quizzes from E1-1
+* a7ebed0 Feat: model four-choice questions with validated Quiz objects
+* 73618bc Feat: add numbered menu and safe console input handling
+* 2935a42 Chore: initialize E1-2 Python quiz project
+Exit code: 0
+
+> git add tests/test_game.py
+Exit code: 0
+
+> git commit -m Test: cover input, score persistence, corrupt files and interrupted sessions
+[main 75f6d6f] Test: cover input, score persistence, corrupt files and interrupted sessions
+ 1 file changed, 181 insertions(+)
+ create mode 100644 tests/test_game.py
+Exit code: 0
+
+> git add scripts/verify.py
+Exit code: 0
+
+> git commit -m Test: verify real CLI sessions, persistence and SIGINT end to end
+[main 174e669] Test: verify real CLI sessions, persistence and SIGINT end to end
+ 1 file changed, 134 insertions(+)
+ create mode 100644 scripts/verify.py
+Exit code: 0
+
+> git push origin main
+To https://github.com/ksw6599/Codyssey_sunuong_e1-2.git
+   2935a42..174e669  main -> main
+Exit code: 0
+
+> git add docs/requirements.md docs/evidence/verification.log docs/evidence/environment.txt docs/evidence/menu.txt docs/evidence/add_quiz.txt docs/evidence/list.txt docs/evidence/play.txt docs/evidence/score.txt docs/evidence/state-after-demo.json
+warning: in the working copy of 'docs/evidence/environment.txt', CRLF will be replaced by LF the next time Git touches it
+Exit code: 0
+
+> git commit -m Docs: record mission checklist and reproducible console evidence
+[main 9089b12] Docs: record mission checklist and reproducible console evidence
+ 9 files changed, 889 insertions(+)
+ create mode 100644 docs/evidence/add_quiz.txt
+ create mode 100644 docs/evidence/environment.txt
+ create mode 100644 docs/evidence/list.txt
+ create mode 100644 docs/evidence/menu.txt
+ create mode 100644 docs/evidence/play.txt
+ create mode 100644 docs/evidence/score.txt
+ create mode 100644 docs/evidence/state-after-demo.json
+ create mode 100644 docs/evidence/verification.log
+ create mode 100644 docs/requirements.md
+Exit code: 0
+
+> git add README.md docs/screenshots/environment.png docs/screenshots/menu.png docs/screenshots/add_quiz.png docs/screenshots/list.png docs/screenshots/play.png docs/screenshots/score.png
+Exit code: 0
+
+> git commit -m Docs: explain execution, state recovery and actual result captures
+[main fa463cc] Docs: explain execution, state recovery and actual result captures
+ 7 files changed, 167 insertions(+), 9 deletions(-)
+ create mode 100644 docs/screenshots/add_quiz.png
+ create mode 100644 docs/screenshots/environment.png
+ create mode 100644 docs/screenshots/list.png
+ create mode 100644 docs/screenshots/menu.png
+ create mode 100644 docs/screenshots/play.png
+ create mode 100644 docs/screenshots/score.png
+Exit code: 0
+
+> git push origin main
+To https://github.com/ksw6599/Codyssey_sunuong_e1-2.git
+   174e669..fa463cc  main -> main
+Exit code: 0
+
+> git add README.md docs/evidence/clone-pull.log docs/evidence/git-graph.txt docs/evidence/git-workflow.log docs/evidence/requirements-audit.md docs/screenshots/add_quiz.png docs/screenshots/git.png
