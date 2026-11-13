@@ -1,0 +1,75 @@
+{
+  "quizzes": [
+    {
+      "question": "Ubuntu에서 현재 작업 경로를 출력하는 명령은?",
+      "choices": [
+        "ls",
+        "pwd",
+        "cd",
+        "mkdir"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "파일 권한 644에서 소유자가 가진 권한은?",
+      "choices": [
+        "읽기만",
+        "읽기와 실행",
+        "읽기와 쓰기",
+        "읽기·쓰기·실행"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Dockerfile에서 호스트 파일을 이미지에 넣는 지시는?",
+      "choices": [
+        "COPY",
+        "RUN",
+        "EXPOSE",
+        "LABEL"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "-p 8781:80으로 실행한 웹 서버의 호스트 포트는?",
+      "choices": [
+        "컨테이너의 8781",
+        "호스트의 80",
+        "Docker의 고정 포트 80",
+        "호스트의 8781"
+      ],
+      "answer": 4
+    },
+    {
+      "question": "바인드 마운트한 index.html을 호스트에서 수정하면?",
+      "choices": [
+        "이미지가 자동으로 다시 빌드된다",
+        "컨테이너에서 변경된 파일을 읽는다",
+        "Git이 자동으로 커밋한다",
+        "Docker 볼륨이 삭제된다"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "원격 변경을 기존 로컬 브랜치에 가져와 반영하는 명령은?",
+      "choices": [
+        "git init",
+        "git clone",
+        "git pull",
+        "git status"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Git에서 현재 작업 상태를 확인하는 명령은?",
+      "choices": [
+        "git status",
+        "git init",
+        "git push",
+        "git clone"
+      ],
+      "answer": 1
+    }
+  ],
+  "best_score": 100
+}

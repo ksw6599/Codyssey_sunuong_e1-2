@@ -1,0 +1,573 @@
+E1-2 actual execution verification
+Python: 3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]
+
+=== first run and unplayed score ===
+Command: /usr/bin/python3 /tmp/codyssey-e12-xos5xawf/project/main.py
+Input: '4\n5\n'
+저장 파일이 없어 기본 퀴즈 6개로 시작합니다.
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 아직 퀴즈를 끝까지 푼 기록이 없습니다.
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 퀴즈와 최고 점수를 state.json에 저장했습니다.
+퀴즈 게임을 종료합니다.
+
+
+Exit code: 0
+
+=== invalid menu input and whitespace ===
+Command: /usr/bin/python3 /tmp/codyssey-e12-xos5xawf/project/main.py
+Input: '\nabc\n9\n 3 \n5\n'
+저장된 데이터를 불러왔습니다. (퀴즈 6개)
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 빈 입력입니다. 숫자를 입력해 주세요.
+선택 (1~5): 숫자로 입력해 주세요.
+선택 (1~5): 1~5 사이의 숫자를 입력해 주세요.
+선택 (1~5): 
+등록된 퀴즈 목록 (총 6개)
+[1] Ubuntu에서 현재 작업 경로를 출력하는 명령은?
+[2] 파일 권한 644에서 소유자가 가진 권한은?
+[3] Dockerfile에서 호스트 파일을 이미지에 넣는 지시는?
+[4] -p 8781:80으로 실행한 웹 서버의 호스트 포트는?
+[5] 바인드 마운트한 index.html을 호스트에서 수정하면?
+[6] 원격 변경을 기존 로컬 브랜치에 가져와 반영하는 명령은?
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 퀴즈와 최고 점수를 state.json에 저장했습니다.
+퀴즈 게임을 종료합니다.
+
+
+Exit code: 0
+
+=== register quiz with invalid inputs ===
+Command: /usr/bin/python3 /tmp/codyssey-e12-xos5xawf/project/main.py
+Input: '2\n\nGit에서 현재 작업 상태를 확인하는 명령은?\n\ngit status\ngit init\ngit push\ngit clone\n\nabc\n0\n 1 \n3\n5\n'
+저장된 데이터를 불러왔습니다. (퀴즈 6개)
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 
+새 퀴즈를 추가합니다.
+문제: 빈 입력은 사용할 수 없습니다. 내용을 입력해 주세요.
+문제: 선택지 1: 빈 입력은 사용할 수 없습니다. 내용을 입력해 주세요.
+선택지 1: 선택지 2: 선택지 3: 선택지 4: 정답 번호 (1~4): 빈 입력입니다. 숫자를 입력해 주세요.
+정답 번호 (1~4): 숫자로 입력해 주세요.
+정답 번호 (1~4): 1~4 사이의 숫자를 입력해 주세요.
+정답 번호 (1~4): 퀴즈가 추가되어 파일에 저장되었습니다. (총 7개)
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 
+등록된 퀴즈 목록 (총 7개)
+[1] Ubuntu에서 현재 작업 경로를 출력하는 명령은?
+[2] 파일 권한 644에서 소유자가 가진 권한은?
+[3] Dockerfile에서 호스트 파일을 이미지에 넣는 지시는?
+[4] -p 8781:80으로 실행한 웹 서버의 호스트 포트는?
+[5] 바인드 마운트한 index.html을 호스트에서 수정하면?
+[6] 원격 변경을 기존 로컬 브랜치에 가져와 반영하는 명령은?
+[7] Git에서 현재 작업 상태를 확인하는 명령은?
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 퀴즈와 최고 점수를 state.json에 저장했습니다.
+퀴즈 게임을 종료합니다.
+
+
+Exit code: 0
+
+=== play seven questions and record high score ===
+Command: /usr/bin/python3 /tmp/codyssey-e12-xos5xawf/project/main.py
+Input: '1\n\nabc\n0\n 2 \n3\n1\n4\n2\n3\n1\n4\n5\n'
+저장된 데이터를 불러왔습니다. (퀴즈 7개)
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 
+퀴즈를 시작합니다. (총 7문제)
+
+[문제 1] Ubuntu에서 현재 작업 경로를 출력하는 명령은?
+  1. ls
+  2. pwd
+  3. cd
+  4. mkdir
+정답 입력 (1~4): 빈 입력입니다. 숫자를 입력해 주세요.
+정답 입력 (1~4): 숫자로 입력해 주세요.
+정답 입력 (1~4): 1~4 사이의 숫자를 입력해 주세요.
+정답 입력 (1~4): [정답] 맞았습니다!
+
+[문제 2] 파일 권한 644에서 소유자가 가진 권한은?
+  1. 읽기만
+  2. 읽기와 실행
+  3. 읽기와 쓰기
+  4. 읽기·쓰기·실행
+정답 입력 (1~4): [정답] 맞았습니다!
+
+[문제 3] Dockerfile에서 호스트 파일을 이미지에 넣는 지시는?
+  1. COPY
+  2. RUN
+  3. EXPOSE
+  4. LABEL
+정답 입력 (1~4): [정답] 맞았습니다!
+
+[문제 4] -p 8781:80으로 실행한 웹 서버의 호스트 포트는?
+  1. 컨테이너의 8781
+  2. 호스트의 80
+  3. Docker의 고정 포트 80
+  4. 호스트의 8781
+정답 입력 (1~4): [정답] 맞았습니다!
+
+[문제 5] 바인드 마운트한 index.html을 호스트에서 수정하면?
+  1. 이미지가 자동으로 다시 빌드된다
+  2. 컨테이너에서 변경된 파일을 읽는다
+  3. Git이 자동으로 커밋한다
+  4. Docker 볼륨이 삭제된다
+정답 입력 (1~4): [정답] 맞았습니다!
+
+[문제 6] 원격 변경을 기존 로컬 브랜치에 가져와 반영하는 명령은?
+  1. git init
+  2. git clone
+  3. git pull
+  4. git status
+정답 입력 (1~4): [정답] 맞았습니다!
+
+[문제 7] Git에서 현재 작업 상태를 확인하는 명령은?
+  1. git status
+  2. git init
+  3. git push
+  4. git clone
+정답 입력 (1~4): [정답] 맞았습니다!
+결과: 7문제 중 7문제 정답! (100점)
+새로운 최고 점수입니다!
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 최고 점수: 100점 (100점 만점)
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 퀴즈와 최고 점수를 state.json에 저장했습니다.
+퀴즈 게임을 종료합니다.
+
+
+Exit code: 0
+
+=== lower score keeps previous high score ===
+Command: /usr/bin/python3 /tmp/codyssey-e12-xos5xawf/project/main.py
+Input: '1\n1\n1\n1\n1\n1\n1\n1\n4\n5\n'
+저장된 데이터를 불러왔습니다. (퀴즈 7개)
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 
+퀴즈를 시작합니다. (총 7문제)
+
+[문제 1] Ubuntu에서 현재 작업 경로를 출력하는 명령은?
+  1. ls
+  2. pwd
+  3. cd
+  4. mkdir
+정답 입력 (1~4): [오답] 정답은 2번입니다.
+
+[문제 2] 파일 권한 644에서 소유자가 가진 권한은?
+  1. 읽기만
+  2. 읽기와 실행
+  3. 읽기와 쓰기
+  4. 읽기·쓰기·실행
+정답 입력 (1~4): [오답] 정답은 3번입니다.
+
+[문제 3] Dockerfile에서 호스트 파일을 이미지에 넣는 지시는?
+  1. COPY
+  2. RUN
+  3. EXPOSE
+  4. LABEL
+정답 입력 (1~4): [정답] 맞았습니다!
+
+[문제 4] -p 8781:80으로 실행한 웹 서버의 호스트 포트는?
+  1. 컨테이너의 8781
+  2. 호스트의 80
+  3. Docker의 고정 포트 80
+  4. 호스트의 8781
+정답 입력 (1~4): [오답] 정답은 4번입니다.
+
+[문제 5] 바인드 마운트한 index.html을 호스트에서 수정하면?
+  1. 이미지가 자동으로 다시 빌드된다
+  2. 컨테이너에서 변경된 파일을 읽는다
+  3. Git이 자동으로 커밋한다
+  4. Docker 볼륨이 삭제된다
+정답 입력 (1~4): [오답] 정답은 2번입니다.
+
+[문제 6] 원격 변경을 기존 로컬 브랜치에 가져와 반영하는 명령은?
+  1. git init
+  2. git clone
+  3. git pull
+  4. git status
+정답 입력 (1~4): [오답] 정답은 3번입니다.
+
+[문제 7] Git에서 현재 작업 상태를 확인하는 명령은?
+  1. git status
+  2. git init
+  3. git push
+  4. git clone
+정답 입력 (1~4): [정답] 맞았습니다!
+결과: 7문제 중 2문제 정답! (28점)
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 최고 점수: 100점 (100점 만점)
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 퀴즈와 최고 점수를 state.json에 저장했습니다.
+퀴즈 게임을 종료합니다.
+
+
+Exit code: 0
+
+=== restart restores quiz and score ===
+Command: /usr/bin/python3 /tmp/codyssey-e12-xos5xawf/project/main.py
+Input: '3\n4\n5\n'
+저장된 데이터를 불러왔습니다. (퀴즈 7개)
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 
+등록된 퀴즈 목록 (총 7개)
+[1] Ubuntu에서 현재 작업 경로를 출력하는 명령은?
+[2] 파일 권한 644에서 소유자가 가진 권한은?
+[3] Dockerfile에서 호스트 파일을 이미지에 넣는 지시는?
+[4] -p 8781:80으로 실행한 웹 서버의 호스트 포트는?
+[5] 바인드 마운트한 index.html을 호스트에서 수정하면?
+[6] 원격 변경을 기존 로컬 브랜치에 가져와 반영하는 명령은?
+[7] Git에서 현재 작업 상태를 확인하는 명령은?
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 최고 점수: 100점 (100점 만점)
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 퀴즈와 최고 점수를 state.json에 저장했습니다.
+퀴즈 게임을 종료합니다.
+
+
+Exit code: 0
+
+=== empty library ===
+Command: /usr/bin/python3 /tmp/codyssey-e12-xos5xawf/project/main.py
+Input: '1\n3\n4\n5\n'
+저장된 데이터를 불러왔습니다. (퀴즈 0개)
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 등록된 퀴즈가 없습니다. 먼저 퀴즈를 추가해 주세요.
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 등록된 퀴즈가 없습니다. 먼저 퀴즈를 추가해 주세요.
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 아직 퀴즈를 끝까지 푼 기록이 없습니다.
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 퀴즈와 최고 점수를 state.json에 저장했습니다.
+퀴즈 게임을 종료합니다.
+
+
+Exit code: 0
+
+=== corrupt JSON recovery ===
+Command: /usr/bin/python3 /tmp/codyssey-e12-xos5xawf/project/main.py
+Input: '3\n5\n'
+저장 파일이 손상되어 기본 퀴즈로 복구합니다: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+원본은 state.json.broken-1794553886748917629.bak에 백업했습니다.
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 
+등록된 퀴즈 목록 (총 6개)
+[1] Ubuntu에서 현재 작업 경로를 출력하는 명령은?
+[2] 파일 권한 644에서 소유자가 가진 권한은?
+[3] Dockerfile에서 호스트 파일을 이미지에 넣는 지시는?
+[4] -p 8781:80으로 실행한 웹 서버의 호스트 포트는?
+[5] 바인드 마운트한 index.html을 호스트에서 수정하면?
+[6] 원격 변경을 기존 로컬 브랜치에 가져와 반영하는 명령은?
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 퀴즈와 최고 점수를 state.json에 저장했습니다.
+퀴즈 게임을 종료합니다.
+
+
+Exit code: 0
+
+=== EOF at menu ===
+Command: /usr/bin/python3 /tmp/codyssey-e12-xos5xawf/project/main.py
+Input: ''
+저장된 데이터를 불러왔습니다. (퀴즈 6개)
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 
+입력 스트림이 끝났습니다. 가능한 데이터를 저장하고 종료합니다.
+퀴즈와 최고 점수를 state.json에 저장했습니다.
+퀴즈 게임을 종료합니다.
+
+
+Exit code: 0
+
+=== EOF during partial registration ===
+Command: /usr/bin/python3 /tmp/codyssey-e12-xos5xawf/project/main.py
+Input: '2\n미완성\n선택지 하나\n'
+저장된 데이터를 불러왔습니다. (퀴즈 6개)
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 
+새 퀴즈를 추가합니다.
+문제: 선택지 1: 선택지 2: 
+입력 스트림이 끝났습니다. 가능한 데이터를 저장하고 종료합니다.
+퀴즈와 최고 점수를 state.json에 저장했습니다.
+퀴즈 게임을 종료합니다.
+
+
+Exit code: 0
+
+=== real SIGINT at menu ===
+Command: /usr/bin/python3 -u /tmp/codyssey-e12-xos5xawf/project/main.py
+Signal: SIGINT sent to the running process group
+저장된 데이터를 불러왔습니다. (퀴즈 6개)
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 
+Ctrl+C를 받았습니다. 가능한 데이터를 저장하고 종료합니다.
+퀴즈와 최고 점수를 state.json에 저장했습니다.
+퀴즈 게임을 종료합니다.
+
+Exit code: 0
+
+=== actual filesystem read error ===
+Command: /usr/bin/python3 /tmp/codyssey-e12-xos5xawf/project/main.py
+Input: '3\n5\n'
+저장 파일 읽기 오류입니다. 기본 퀴즈로 시작합니다: [Errno 21] Is a directory: '/tmp/codyssey-e12-xos5xawf/project/state.json'
+기존 파일을 보호하기 위해 이번 실행은 파일에 저장하지 않습니다.
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 
+등록된 퀴즈 목록 (총 6개)
+[1] Ubuntu에서 현재 작업 경로를 출력하는 명령은?
+[2] 파일 권한 644에서 소유자가 가진 권한은?
+[3] Dockerfile에서 호스트 파일을 이미지에 넣는 지시는?
+[4] -p 8781:80으로 실행한 웹 서버의 호스트 포트는?
+[5] 바인드 마운트한 index.html을 호스트에서 수정하면?
+[6] 원격 변경을 기존 로컬 브랜치에 가져와 반영하는 명령은?
+
+========================================
+      개발 작업실 복습 퀴즈 · E1-2
+========================================
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 점수 확인
+5. 종료
+선택 (1~5): 파일 저장이 중지된 상태입니다. 이번 변경은 메모리에만 있습니다.
+퀴즈 게임을 종료합니다.
+
+
+Exit code: 0
+
+Write denial and replacement denial are additionally covered by unit tests.
+=== unit tests ===
+
+test_actual_read_error_protects_existing_path (test_game.GameTests.test_actual_read_error_protects_existing_path) ... ok
+test_actual_write_error_is_reported (test_game.GameTests.test_actual_write_error_is_reported) ... ok
+test_add_and_reload_preserves_korean (test_game.GameTests.test_add_and_reload_preserves_korean) ... ok
+test_corrupt_json_is_backed_up_before_recovery (test_game.GameTests.test_corrupt_json_is_backed_up_before_recovery) ... ok
+test_empty_library_and_zero_score (test_game.GameTests.test_empty_library_and_zero_score) ... ok
+test_failed_atomic_replace_keeps_old_file_and_cleans_temporary (test_game.GameTests.test_failed_atomic_replace_keeps_old_file_and_cleans_temporary) ... ok
+test_failed_corrupt_backup_disables_overwrite (test_game.GameTests.test_failed_corrupt_backup_disables_overwrite) ... ok
+test_interrupt_and_eof_exit_safely (test_game.GameTests.test_interrupt_and_eof_exit_safely) ... ok
+test_invalid_schema_does_not_partially_load (test_game.GameTests.test_invalid_schema_does_not_partially_load) ... ok
+test_invalid_utf8_is_recoverable (test_game.GameTests.test_invalid_utf8_is_recoverable) ... ok
+test_missing_file_uses_defaults (test_game.GameTests.test_missing_file_uses_defaults) ... ok
+test_play_updates_best_and_lower_score_cannot_replace_it (test_game.GameTests.test_play_updates_best_and_lower_score_cannot_replace_it) ... ok
+test_unplayed_score_is_distinct_from_zero (test_game.GameTests.test_unplayed_score_is_distinct_from_zero) ... ok
+test_answer_rejects_zero_and_accepts_spaces (test_game.InputTests.test_answer_rejects_zero_and_accepts_spaces) ... ok
+test_menu_retries_empty_text_and_out_of_range (test_game.InputTests.test_menu_retries_empty_text_and_out_of_range) ... ok
+test_required_text_retries_whitespace (test_game.InputTests.test_required_text_retries_whitespace) ... ok
+test_defaults_are_independent (test_game.QuizTests.test_defaults_are_independent) ... ok
+test_reject_invalid_quiz_records (test_game.QuizTests.test_reject_invalid_quiz_records) ... ok
+test_round_trip_and_one_based_answer (test_game.QuizTests.test_round_trip_and_one_based_answer) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.015s
+
+OK
+
+Exit code: 0
+ALL CHECKS PASSED (12 entrypoint scenarios + 19 unit tests)

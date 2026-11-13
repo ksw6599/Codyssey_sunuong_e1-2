@@ -1,0 +1,16 @@
+Environment captured for E1-2
+Command: wsl -d Ubuntu-24.04 --exec python3 --version
+Python 3.12.3
+Command: git --version
+git version 2.56.0.windows.4
+Command: code --version
+1.145.0
+a717861c07586a53d83b80d742cd3f59b20a6273
+x64
+Command: git config --local --get user.name
+ksw6599
+Command: git config --local --get user.email
+91269255+ksw6599@users.noreply.github.com
+Command: git remote -v
+origin	https://github.com/ksw6599/Codyssey_sunuong_e1-2.git (fetch)
+origin	https://github.com/ksw6599/Codyssey_sunuong_e1-2.git (push)
