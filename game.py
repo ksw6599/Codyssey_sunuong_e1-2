@@ -27,7 +27,7 @@ def read_number(prompt, minimum, maximum):
 
 
 def read_text(prompt):
-    """空白だけの問題や選択肢を登録しない。"""
+    """공백뿐인 문제나 선택지가 등록되지 않도록 한다."""
     while True:
         text = input(prompt).strip()
         if text:
@@ -114,6 +114,14 @@ class QuizGame:
         else:
             print("퀴즈는 이번 실행에 추가됐지만 파일 저장에 실패했습니다.")
 
+    def list_quizzes(self):
+        if not self.quizzes:
+            print("등록된 퀴즈가 없습니다. 먼저 퀴즈를 추가해 주세요.")
+            return
+        print(f"\n등록된 퀴즈 목록 (총 {len(self.quizzes)}개)")
+        for number, quiz in enumerate(self.quizzes, start=1):
+            print(f"[{number}] {quiz.question}")
+
     def run(self):
         try:
             while True:
@@ -123,6 +131,8 @@ class QuizGame:
                     self.play_quiz()
                 elif choice == 2:
                     self.add_quiz()
+                elif choice == 3:
+                    self.list_quizzes()
                 elif choice == 5:
                     break
                 else:
