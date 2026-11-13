@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.vscode/
+state.json
+state.json.*
+docs/mission-source.txt
+.coverage
+.DS_Store
+Thumbs.db
