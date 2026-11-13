@@ -1,5 +1,7 @@
 """메뉴와 게임의 진행을 담당한다."""
 
+from defaults import create_default_quizzes
+
 
 def read_number(prompt, minimum, maximum):
     """공백, 빈 입력, 문자, 범위 밖 숫자를 처리하고 정수를 반환한다."""
@@ -20,6 +22,9 @@ def read_number(prompt, minimum, maximum):
 
 class QuizGame:
     """사용자가 고른 메뉴에 따라 기능을 실행한다."""
+
+    def __init__(self):
+        self.quizzes = create_default_quizzes()
 
     def show_menu(self):
         print("\n========================================")
